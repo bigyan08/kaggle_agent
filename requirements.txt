@@ -1,3 +1,11 @@
 kagglehub
 nbformat
 langgraph
+langchain
+python-dotenv
+langchain-groq
+mcp
+pandas
+matplotlib
+seaborn
+ydata-profiling
