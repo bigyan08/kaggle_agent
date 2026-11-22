@@ -5,7 +5,7 @@ services:
     command: uvicorn app.api:app --host 0.0.0.0 --port 8000
     env_file: .env                                  # GROQ_API_KEY etc.
     ports:
-      - "8000:8000"
+      - "127.0.0.1:8000:8000"
     volumes:
       - ./data:/code/data                           # downloaded datasets and saved runs
       - ${HOME}/.kaggle/kaggle.json:/root/.kaggle/kaggle.json:ro
@@ -20,7 +20,7 @@ services:
     environment:
       API_URL: http://api:8000                      # service name = hostname inside the compose network
     ports:
-      - "8501:8501"
+      - "127.0.0.1:8502:8501"                         # host port 8502 -> container port 8501, local machine only
     depends_on:
       api:
         condition: service_healthy

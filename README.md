@@ -82,7 +82,7 @@ uv run streamlit run ui/streamlit_app.py   # UI:   http://localhost:8501
 With Docker (needs `.env` and `~/.kaggle/kaggle.json` to exist):
 
 ```bash
-docker compose up --build                  # UI: http://localhost:8501
+docker compose up --build                  # UI: http://localhost:8502 (API: :8000)
 ```
 
 ### Configuration
