@@ -22,5 +22,9 @@ RECURSION_LIMIT = int(os.getenv("RECURSION_LIMIT", "25"))
 # Tools that pause the graph until a human approves them.
 SENSITIVE_TOOLS = {"download_dataset", "train_baselines"}
 
+# LangSmith only traces when told to, so switch it on whenever a key is configured.
+if os.getenv("LANGSMITH_API_KEY"):
+    os.environ.setdefault("LANGSMITH_TRACING", "true")
+
 DATASETS_DIR.mkdir(parents=True, exist_ok=True)
 RUNS_DIR.mkdir(parents=True, exist_ok=True)
