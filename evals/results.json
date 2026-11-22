@@ -1,0 +1,102 @@
+{
+  "summary": {
+    "tasks": 10,
+    "finished_rate": 1.0,
+    "task_type_ok_rate": 1.0,
+    "beats_dummy_rate": 1.0,
+    "avg_steps": 4.3,
+    "avg_seconds": 31.3
+  },
+  "tasks": [
+    {
+      "prompt": "Find the iris flower dataset and build a baseline model to p",
+      "error": "",
+      "finished": true,
+      "task_type_ok": true,
+      "beats_dummy": true,
+      "steps": 4,
+      "seconds": 17.0
+    },
+    {
+      "prompt": "Find the Titanic dataset and build a baseline model to predi",
+      "error": "",
+      "finished": true,
+      "task_type_ok": true,
+      "beats_dummy": true,
+      "steps": 4,
+      "seconds": 26.8
+    },
+    {
+      "prompt": "Find a heart disease dataset and build a baseline model to p",
+      "error": "",
+      "finished": true,
+      "task_type_ok": true,
+      "beats_dummy": true,
+      "steps": 4,
+      "seconds": 26.3
+    },
+    {
+      "prompt": "Find the Pima Indians diabetes dataset and build a baseline ",
+      "error": "",
+      "finished": true,
+      "task_type_ok": true,
+      "beats_dummy": true,
+      "steps": 5,
+      "seconds": 38.9
+    },
+    {
+      "prompt": "Find a breast cancer dataset and build a baseline model to p",
+      "error": "",
+      "finished": true,
+      "task_type_ok": true,
+      "beats_dummy": true,
+      "steps": 4,
+      "seconds": 48.0
+    },
+    {
+      "prompt": "Find a telecom customer churn dataset and build a baseline m",
+      "error": "",
+      "finished": true,
+      "task_type_ok": true,
+      "beats_dummy": true,
+      "steps": 4,
+      "seconds": 30.6
+    },
+    {
+      "prompt": "Find a house prices dataset and build a baseline model to pr",
+      "error": "",
+      "finished": true,
+      "task_type_ok": true,
+      "beats_dummy": true,
+      "steps": 4,
+      "seconds": 47.3
+    },
+    {
+      "prompt": "Find the California housing dataset and build a baseline mod",
+      "error": "",
+      "finished": true,
+      "task_type_ok": true,
+      "beats_dummy": true,
+      "steps": 4,
+      "seconds": 23.4
+    },
+    {
+      "prompt": "Find a medical insurance dataset and build a baseline model ",
+      "error": "",
+      "finished": true,
+      "task_type_ok": true,
+      "beats_dummy": true,
+      "steps": 4,
+      "seconds": 15.5
+    },
+    {
+      "prompt": "Find a used car dataset and build a baseline model to predic",
+      "error": "",
+      "finished": true,
+      "task_type_ok": true,
+      "beats_dummy": true,
+      "steps": 6,
+      "seconds": 39.2
+    }
+  ]
+}

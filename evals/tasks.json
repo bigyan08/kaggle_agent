@@ -1,0 +1,12 @@
+[
+  {"prompt": "Find the iris flower dataset and build a baseline model to predict the species.", "expected_task_type": "classification"},
+  {"prompt": "Find the Titanic dataset and build a baseline model to predict who survived.", "expected_task_type": "classification"},
+  {"prompt": "Find a heart disease dataset and build a baseline model to predict whether a patient has heart disease.", "expected_task_type": "classification"},
+  {"prompt": "Find the Pima Indians diabetes dataset and build a baseline model to predict diabetes.", "expected_task_type": "classification"},
+  {"prompt": "Find a breast cancer dataset and build a baseline model to predict whether a tumor is malignant.", "expected_task_type": "classification"},
+  {"prompt": "Find a telecom customer churn dataset and build a baseline model to predict churn.", "expected_task_type": "classification"},
+  {"prompt": "Find a house prices dataset and build a baseline model to predict the sale price.", "expected_task_type": "regression"},
+  {"prompt": "Find the California housing dataset and build a baseline model to predict the median house value.", "expected_task_type": "regression"},
+  {"prompt": "Find a medical insurance dataset and build a baseline model to predict the insurance charges.", "expected_task_type": "regression"},
+  {"prompt": "Find a used car dataset and build a baseline model to predict the car price.", "expected_task_type": "regression"}
+]
