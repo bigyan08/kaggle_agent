@@ -1,0 +1,26 @@
+# Two services from the same image. Secrets are passed at runtime, never baked into the image.
+services:
+  api:
+    build: .
+    command: uvicorn app.api:app --host 0.0.0.0 --port 8000
+    env_file: .env                                  # GROQ_API_KEY etc.
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/code/data                           # downloaded datasets and saved runs
+      - ${HOME}/.kaggle/kaggle.json:/root/.kaggle/kaggle.json:ro
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      retries: 5
+
+  ui:
+    build: .
+    command: streamlit run ui/streamlit_app.py --server.address 0.0.0.0 --server.port 8501 --server.headless true
+    environment:
+      API_URL: http://api:8000                      # service name = hostname inside the compose network
+    ports:
+      - "8501:8501"
+    depends_on:
+      api:
+        condition: service_healthy
